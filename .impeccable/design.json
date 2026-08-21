@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-21T00:00:00Z",
+  "title": "Design System: ГАРТ",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f2efe9",
+        "tonalRamp": ["#302a1c", "#554932", "#796948", "#9e885d", "#b5a381", "#cabea6", "#e0d9ca", "#f6f3ef"]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Grey",
+        "canonical": "#e6e2d9",
+        "tonalRamp": ["#2e291e", "#514935", "#74684d", "#988864", "#afa386", "#c7bea9", "#ded8cc", "#f5f3f0"]
+      },
+      "panel-2": {
+        "role": "neutral",
+        "displayName": "Panel Grey Deep",
+        "canonical": "#ded9ce",
+        "tonalRamp": ["#2e291e", "#514935", "#74684d", "#988864", "#afa386", "#c7bea9", "#ded8cc", "#f5f3f0"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#262626", "#434343", "#616161", "#7e7e7e", "#9b9b9b", "#b8b8b8", "#d5d5d5", "#f2f2f2"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#101010",
+        "tonalRamp": ["#262626", "#434343", "#616161", "#7e7e7e", "#9b9b9b", "#b8b8b8", "#d5d5d5", "#f2f2f2"]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Warm Ink Two",
+        "canonical": "#3b3833",
+        "tonalRamp": ["#292723", "#48453e", "#68625a", "#878075", "#a29d94", "#bdb9b3", "#d8d6d2", "#f3f2f1"]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Warm Ink Three",
+        "canonical": "#6a655c",
+        "tonalRamp": ["#292724", "#48453f", "#67625a", "#878075", "#a29d94", "#bdb9b3", "#d8d6d2", "#f3f3f1"]
+      },
+      "ink-4": {
+        "role": "neutral",
+        "displayName": "Warm Ink Four (icons only)",
+        "canonical": "#8d8880",
+        "tonalRamp": ["#292724", "#48453f", "#67625a", "#878075", "#a29d94", "#bdb9b3", "#d8d6d2", "#f3f3f1"]
+      },
+      "dark": {
+        "role": "neutral",
+        "displayName": "Slab Black",
+        "canonical": "#141414",
+        "tonalRamp": ["#262626", "#434343", "#616161", "#7e7e7e", "#9b9b9b", "#b8b8b8", "#d5d5d5", "#f2f2f2"]
+      },
+      "dark-2": {
+        "role": "neutral",
+        "displayName": "Slab Black Raised",
+        "canonical": "#1f1e1c",
+        "tonalRamp": ["#262626", "#434343", "#616161", "#7e7e7e", "#9b9b9b", "#b8b8b8", "#d5d5d5", "#f2f2f2"]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark",
+        "canonical": "#f4f2ee",
+        "tonalRamp": ["#302a1c", "#554932", "#796948", "#9e885d", "#b5a381", "#cabea6", "#e0d9ca", "#f6f3ef"]
+      },
+      "on-dark-2": {
+        "role": "neutral",
+        "displayName": "On Dark Two",
+        "canonical": "#b3aea4",
+        "tonalRamp": ["#2a2723", "#49453d", "#696358", "#898172", "#a49e92", "#bebab2", "#d9d6d1", "#f3f3f1"]
+      },
+      "volt": {
+        "role": "primary",
+        "displayName": "Volt Lime",
+        "canonical": "#d8f84a",
+        "tonalRamp": ["#3d4a03", "#6b8205", "#99ba07", "#c7f209", "#d5f83e", "#e2fa76", "#eefcae", "#fafee6"]
+      },
+      "volt-deep": {
+        "role": "primary",
+        "displayName": "Volt Deep",
+        "canonical": "#c2e230",
+        "tonalRamp": ["#394309", "#647611", "#8fa918", "#badc1f", "#cbe64f", "#daee82", "#e9f5b6", "#f8fce9"]
+      },
+      "volt-ink": {
+        "role": "primary",
+        "displayName": "Volt Ink",
+        "canonical": "#101010",
+        "tonalRamp": ["#262626", "#434343", "#616161", "#7e7e7e", "#9b9b9b", "#b8b8b8", "#d5d5d5", "#f2f2f2"]
+      },
+      "err-border": {
+        "role": "tertiary",
+        "displayName": "Error Border",
+        "canonical": "#e2604a",
+        "tonalRamp": ["#57190f", "#7d2416", "#a3301d", "#c93c24", "#d96a55", "#e69686", "#f0c2b8", "#faeeeb"]
+      },
+      "err-ink": {
+        "role": "tertiary",
+        "displayName": "Error Ink",
+        "canonical": "#ff9d8a",
+        "tonalRamp": ["#4d1408", "#73200c", "#992b10", "#bf3614", "#d96852", "#e99a8c", "#f4ccc5", "#fdf1ef"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only. Uppercase, split into two spans that part around the athlete." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings, uppercase, capped at 18ch." },
+      "title": { "displayName": "Title", "purpose": "Plan names and standalone third-level headings." },
+      "subhead": { "displayName": "Subhead", "purpose": "In-card headings: zones, coaches, method steps, booking reasons. The most-used heading size." },
+      "stat": { "displayName": "Stat", "purpose": "The four animated counters in the facts strip." },
+      "price": { "displayName": "Price", "purpose": "Monthly figure on plan cards, paired with a mono currency unit." },
+      "button": { "displayName": "Button", "purpose": "Every button and CTA label." },
+      "lede": { "displayName": "Lede", "purpose": "The hero paragraph, capped at 46ch." },
+      "body": { "displayName": "Body", "purpose": "Page default and section intros, capped at 68ch." },
+      "body-sm": { "displayName": "Body Small", "purpose": "In-card copy: steps, coaches, plan bullets, reviews, footer links." },
+      "label": { "displayName": "Label", "purpose": "Standard caption role: schedule footnotes, tier names, day pills, disclaimers." },
+      "micro": { "displayName": "Micro Label", "purpose": "Smallest voice: fact captions, zone areas, coach roles, tags, field labels, footer heads." },
+      "data": { "displayName": "Data", "purpose": "Measured values — times, prices, counts. Always tabular figures." }
+    },
+    "shadows": [
+      { "name": "shadow-card", "value": "0 18px 40px -28px rgb(16 16 16 / 0.45)", "purpose": "Resting elevation for raised white plates: coach chip, video card, schedule sheet, review cards." },
+      { "name": "shadow-lift", "value": "0 30px 60px -34px rgb(16 16 16 / 0.55)", "purpose": "Hover elevation for cards, and the permanent state of the leading pricing card." },
+      { "name": "shadow-btn-hover", "value": "0 14px 26px -14px rgb(16 16 16 / 0.5)", "purpose": "Tighter shadow paired with the button's -2px hover translate. Cancelled on ghost and on-dark variants." },
+      { "name": "shadow-stuck", "value": "0 1px 0 rgb(16 16 16 / 0.07)", "purpose": "Hairline under the sticky header once the page scrolls past 24px." },
+      { "name": "drop-cut", "value": "drop-shadow(0 26px 40px rgb(16 16 16 / 0.25))", "purpose": "Grounds the keyed-out hero athlete on the panel. The only drop-shadow in the build." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single deceleration curve for every transition on the page." },
+      { "name": "hero-title", "value": "opacity 0.9s var(--ease), transform 1.15s var(--ease)", "purpose": "Hero halves slide in from translateX(∓0.42em); no delay." },
+      { "name": "hero-cut-delay", "value": "0.1s", "purpose": "Athlete rises from translateY(7%) scale(0.985)." },
+      { "name": "hero-copy-delay", "value": "0.26s", "purpose": "Lede and actions follow from translateY(1.4rem)." },
+      { "name": "hero-side-delay", "value": "0.36s", "purpose": "Video card and coach chip land last." },
+      { "name": "photo-curtain", "value": "clip-path 0.95s var(--ease)", "purpose": "inset(0 0 100% 0 round var(--r-lg)) → inset(0 0 0 0 round var(--r-lg)); wipes bottom-to-top keeping the corner radius." },
+      { "name": "rise", "value": "opacity 0.7s var(--ease), transform 0.7s var(--ease)", "purpose": "data-rise entrance from translateY(20px); sibling stagger of 60ms capped at 240ms." },
+      { "name": "facts-stagger", "value": "0.02s / 0.09s / 0.16s / 0.23s", "purpose": "Fixed delays across the four fact cells." },
+      { "name": "hover-lift", "value": "transform 0.45s var(--ease), box-shadow 0.45s var(--ease)", "purpose": "Photo cards -6px, reviews and plans -4px, video card and chip -3px, buttons -2px." },
+      { "name": "photo-zoom", "value": "transform 0.6s–0.7s var(--ease)", "purpose": "Image scales to 1.06 (zones, video) or 1.05 (coaches) inside its fixed frame." },
+      { "name": "count-up", "value": "1100ms, 1 - (1 - p)^3", "purpose": "Fact counters climb once on 60% visibility, locale-formatted, on tabular figures." },
+      { "name": "drawer", "value": "transform 0.45s var(--ease), visibility 0.45s", "purpose": "Mobile sheet slides down from translateY(-100%)." },
+      { "name": "reduced-motion", "value": "@media (prefers-reduced-motion: reduce) → 0.001ms", "purpose": "All animation and transition durations clamped; smooth scrolling turned off; counters print their final value." }
+    ],
+    "breakpoints": [
+      { "name": "nda-short", "value": "max-width: 680px" },
+      { "name": "form-2col", "value": "620px" },
+      { "name": "zones-3col", "value": "700px" },
+      { "name": "steps-2col-coaches-3col", "value": "760px" },
+      { "name": "facts-4col", "value": "780px" },
+      { "name": "slot-row", "value": "820px" },
+      { "name": "reviews-footer", "value": "860px" },
+      { "name": "hero-composed", "value": "900px" },
+      { "name": "booking-2col", "value": "980px" },
+      { "name": "nav-desktop", "value": "1000px" },
+      { "name": "zones-stagger", "value": "1080px" },
+      { "name": "hero-tall", "value": "1180px" }
+    ],
+    "robustness": [
+      { "name": "The JS-Gate Rule", "value": "html.js body:not(.ready) …", "purpose": "The hero's pre-animation hidden state exists only under html.js, set by an inline head script. Without JavaScript the page renders fully visible." },
+      { "name": "The Ready Fallback Rule", "value": "window load + setTimeout(…, 1200)", "purpose": "body.ready starts the hero choreography on load, with a 1200ms timer so a cache-served or backgrounded load can never leave the hero hidden." },
+      { "name": "The Re-Arm Rule", "value": "rafId + visibilitychange", "purpose": "The scroll handler throttles on a rAF id and re-arms on visibilitychange, cancelling the pending frame, so a background tab cannot leave it permanently stuck." },
+      { "name": "The Padding-Stagger Rule", "value": ".zone:nth-child(n) { padding-top: … }", "purpose": "Grid stagger uses padding, not margin: margin does not contribute to grid row height and caused row overlap." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The volt CTA pill. Trial-day booking, header CTA, form submit.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Пробний день — безкоштовно<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M2.5 8h11M9 3.5 13.5 8 9 12.5\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 52px; padding: 0.9rem 1.6rem; background: var(--volt, #d8f84a); color: var(--volt-ink, #101010); border: 1.5px solid var(--volt, #d8f84a); border-radius: var(--r-pill, 999px); font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: var(--t-sm, 0.8125rem); font-weight: 700; letter-spacing: -0.01em; text-decoration: none; cursor: pointer; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-btn svg { width: 16px; height: 16px; flex-shrink: 0; } .ds-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 26px -14px rgb(16 16 16 / 0.5); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 3px solid var(--ink, #101010); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Black pill used for plan CTAs, where volt would vanish into the volt block.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">Обрати БРОНЗУ</a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; width: 100%; min-height: 52px; padding: 0.9rem 1.6rem; background: var(--ink, #101010); color: var(--paper, #f2efe9); border: 1.5px solid var(--ink, #101010); border-radius: var(--r-pill, 999px); font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: var(--t-sm, 0.8125rem); font-weight: 700; letter-spacing: -0.01em; text-decoration: none; cursor: pointer; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-btn-ink:hover { transform: translateY(-2px); box-shadow: 0 14px 26px -14px rgb(16 16 16 / 0.5); } .ds-btn-ink:focus-visible { outline: 3px solid var(--ink, #101010); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on light. Hairline border that goes solid ink on hover; never carries a shadow.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Розклад</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0.9rem 1.6rem; background: transparent; color: var(--ink, #101010); border: 1.5px solid rgb(16 16 16 / 0.12); border-radius: var(--r-pill, 999px); font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: var(--t-sm, 0.8125rem); font-weight: 700; letter-spacing: -0.01em; text-decoration: none; cursor: pointer; transition: transform 0.25s cubic-bezier(0.16,1,0.3,1), background 0.25s, border-color 0.25s; } .ds-btn-ghost:hover { transform: translateY(-2px); border-color: var(--ink, #101010); background: rgb(16 16 16 / 0.04); } .ds-btn-ghost:focus-visible { outline: 3px solid var(--ink, #101010); outline-offset: 3px; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header link in a pill hit area. The scroll-spy sets aria-current on the section in view, filling the pill with ink.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Зони</a><a class=\"ds-nav-link\" href=\"#\" aria-current=\"true\">Метод</a><a class=\"ds-nav-link\" href=\"#\">Тренери</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 0.15rem; align-items: center; padding: 0.75rem 1rem; background: var(--paper, #f2efe9); border-radius: var(--r-pill, 999px); } .ds-nav-link { padding: 0.7rem 0.85rem; border-radius: var(--r-pill, 999px); font-family: var(--f-body, \"Geologica\", sans-serif); font-size: var(--t-sm, 0.8125rem); font-weight: 400; color: var(--ink-2, #3b3833); text-decoration: none; transition: background 0.22s, color 0.22s; } .ds-nav-link:hover { background: rgb(16 16 16 / 0.06); color: var(--ink, #101010); } .ds-nav-link[aria-current=\"true\"] { background: var(--ink, #101010); color: var(--paper, #f2efe9); font-weight: 500; } .ds-nav-link:focus-visible { outline: 3px solid var(--ink, #101010); outline-offset: 3px; }"
+    },
+    {
+      "name": "Dark Input Field",
+      "kind": "input",
+      "refersTo": "input-dark",
+      "description": "The only input style in the system: dark-only, with a persistent mono label above and a volt focus border.",
+      "html": "<div class=\"ds-field-wrap\"><div class=\"ds-field\"><label for=\"ds-i-phone\">Телефон <b>*</b></label><input id=\"ds-i-phone\" type=\"tel\" placeholder=\"+380 XX XXX XX XX\"></div></div>",
+      "css": ".ds-field-wrap { background: var(--dark-2, #1f1e1c); border-radius: var(--r-lg, 1.75rem); padding: 1.375rem; } .ds-field { display: grid; gap: 0.35rem; } .ds-field label { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.5625rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--on-dark-2, #b3aea4); } .ds-field label b { color: var(--volt, #d8f84a); } .ds-field input { width: 100%; min-height: 52px; padding: 0.8rem 1rem; background: rgb(255 255 255 / 0.05); border: 1.5px solid rgb(255 255 255 / 0.14); border-radius: var(--r-sm, 0.625rem); color: var(--on-dark, #f4f2ee); font-family: var(--f-body, \"Geologica\", sans-serif); font-size: 1rem; font-weight: 300; transition: border-color 0.2s, background 0.2s; } .ds-field input::placeholder { color: rgb(179 174 164 / 0.65); } .ds-field input:hover { border-color: rgb(255 255 255 / 0.3); } .ds-field input:focus { outline: none; border-color: var(--volt, #d8f84a); background: rgb(255 255 255 / 0.08); }"
+    },
+    {
+      "name": "Coach Chip",
+      "kind": "chip",
+      "refersTo": "chip-coaches",
+      "description": "White proof-of-staff pill in the hero: overlapping avatars, an Unbounded count and a mono caption.",
+      "html": "<span class=\"ds-chip\"><span class=\"ds-chip-faces\"><span></span><span></span><span></span></span><span class=\"ds-chip-meta\"><b>34</b><span>тренери в штаті</span></span></span>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 0.7rem; padding: 0.5rem 1rem 0.5rem 0.5rem; border-radius: var(--r-pill, 999px); background: var(--white, #fff); box-shadow: 0 18px 40px -28px rgb(16 16 16 / 0.45); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-chip:hover { transform: translateY(-3px); } .ds-chip-faces { display: flex; } .ds-chip-faces span { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--white, #fff); background: var(--panel-2, #ded9ce); } .ds-chip-faces span + span { margin-left: -12px; } .ds-chip-meta { display: grid; } .ds-chip-meta b { font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: 1.0625rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; color: var(--ink, #101010); } .ds-chip-meta span { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.5625rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3, #6a655c); white-space: nowrap; }"
+    },
+    {
+      "name": "Zone Photo Card",
+      "kind": "card",
+      "refersTo": "card-photo",
+      "description": "The signature card: a 4/5 photo frame with a floating area tag, a bar underneath, and a volt round arrow that rotates on hover.",
+      "html": "<a class=\"ds-zone\" href=\"#\"><span class=\"ds-zone-shot\"><span class=\"ds-zone-area\">620 м²</span></span><span class=\"ds-zone-bar\"><span class=\"ds-zone-txt\"><h3>Важка зона</h3><p>Помости, рами, вільні ваги</p></span><span class=\"ds-round\"><svg viewBox=\"0 0 18 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M3 15 15 3M6 3h9v9\"/></svg></span></span></a>",
+      "css": ".ds-zone { display: block; width: 240px; text-decoration: none; color: var(--ink, #101010); } .ds-zone-shot { position: relative; display: block; border-radius: var(--r-lg, 1.75rem); overflow: hidden; background: var(--panel-2, #ded9ce); aspect-ratio: 4 / 5; transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), box-shadow 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-zone:hover .ds-zone-shot { transform: translateY(-6px); box-shadow: 0 30px 60px -34px rgb(16 16 16 / 0.55); } .ds-zone-area { position: absolute; top: 0.85rem; left: 0.85rem; padding: 0.3rem 0.65rem; border-radius: var(--r-pill, 999px); background: color-mix(in srgb, var(--paper, #f2efe9) 92%, transparent); backdrop-filter: blur(6px); font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.5625rem; font-weight: 700; letter-spacing: 0.08em; color: var(--ink, #101010); } .ds-zone-bar { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding-top: 0.85rem; } .ds-zone-bar h3 { margin: 0; font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: 1.0625rem; font-weight: 700; letter-spacing: -0.025em; line-height: 1.2; } .ds-zone-bar p { margin: 0.15rem 0 0; font-family: var(--f-body, \"Geologica\", sans-serif); font-size: 0.8125rem; font-weight: 300; color: var(--ink-3, #6a655c); } .ds-round { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--volt, #d8f84a); color: var(--volt-ink, #101010); flex-shrink: 0; transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), background 0.25s; } .ds-round svg { width: 17px; height: 17px; } .ds-zone:hover .ds-round { transform: rotate(45deg); background: var(--ink, #101010); color: var(--volt, #d8f84a); } .ds-zone:focus-visible { outline: 3px solid var(--ink, #101010); outline-offset: 3px; border-radius: 4px; }"
+    },
+    {
+      "name": "Day Pill",
+      "kind": "chip",
+      "refersTo": "day-pill",
+      "description": "Schedule tablist chip. Selected fills ink; today carries a volt-deep dot. Keyboard-navigable with Arrow, Home and End.",
+      "html": "<div class=\"ds-days\" role=\"tablist\"><button class=\"ds-day\" role=\"tab\" aria-selected=\"false\" type=\"button\">ПН</button><button class=\"ds-day\" role=\"tab\" aria-selected=\"true\" data-today=\"true\" type=\"button\">ВТ</button><button class=\"ds-day\" role=\"tab\" aria-selected=\"false\" type=\"button\">СР</button></div>",
+      "css": ".ds-days { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; max-width: 320px; } .ds-day { min-height: 48px; padding: 0.6rem 0.4rem; text-align: center; border: 1.5px solid rgb(16 16 16 / 0.12); border-radius: var(--r-pill, 999px); background: transparent; color: var(--ink-2, #3b3833); font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.06em; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; } .ds-day:hover { border-color: var(--ink, #101010); } .ds-day[aria-selected=\"true\"] { background: var(--ink, #101010); border-color: var(--ink, #101010); color: var(--paper, #f2efe9); font-weight: 700; } .ds-day[data-today=\"true\"]::after { content: \"\"; display: inline-block; width: 5px; height: 5px; margin-left: 0.4rem; border-radius: 50%; background: var(--volt-deep, #c2e230); vertical-align: middle; } .ds-day[aria-selected=\"true\"][data-today=\"true\"]::after { background: var(--volt, #d8f84a); } .ds-day:focus-visible { outline: 3px solid var(--ink, #101010); outline-offset: 3px; }"
+    },
+    {
+      "name": "Schedule Slot",
+      "kind": "custom",
+      "refersTo": "schedule-slot",
+      "description": "A row of the white schedule sheet: mono time, class name, coach, room, and a three-dot load indicator.",
+      "html": "<div class=\"ds-sched\"><div class=\"ds-slot\"><span class=\"ds-slot-t\">18:00</span><span class=\"ds-slot-n\">Гарт: сила</span><span class=\"ds-slot-who\">Остап Кравець</span><span class=\"ds-slot-where\">Важка зона</span><span class=\"ds-slot-load\"><span class=\"ds-dots\" aria-hidden=\"true\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i></span><span>на межі</span></span></div><div class=\"ds-slot\"><span class=\"ds-slot-t\">20:30</span><span class=\"ds-slot-n\">Відпуск</span><span class=\"ds-slot-who\">Дана Ліщук</span><span class=\"ds-slot-where\">Відновлення</span><span class=\"ds-slot-load\"><span class=\"ds-dots\" aria-hidden=\"true\"><i class=\"on\"></i><i></i><i></i></span><span>лагідно</span></span></div></div>",
+      "css": ".ds-sched { border-radius: var(--r-lg, 1.75rem); overflow: hidden; background: var(--white, #fff); box-shadow: 0 18px 40px -28px rgb(16 16 16 / 0.45); } .ds-slot { display: grid; grid-template-columns: 84px minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 0.9fr) auto; align-items: center; gap: 1.375rem; padding: 0.95rem 1.375rem; border-bottom: 1px solid rgb(16 16 16 / 0.07); transition: background 0.22s; } .ds-slot:last-child { border-bottom: 0; } .ds-slot:hover { background: rgb(16 16 16 / 0.035); } .ds-slot-t { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.8125rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink, #101010); } .ds-slot-n { font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: 1rem; font-weight: 700; letter-spacing: -0.03em; color: var(--ink, #101010); } .ds-slot-who, .ds-slot-where { font-family: var(--f-body, \"Geologica\", sans-serif); font-size: 0.8125rem; font-weight: 300; color: var(--ink-3, #6a655c); } .ds-slot-load { display: flex; align-items: center; gap: 0.45rem; justify-self: end; } .ds-dots { display: flex; gap: 3px; } .ds-dots i { width: 7px; height: 7px; border-radius: 50%; background: rgb(16 16 16 / 0.12); } .ds-dots i.on { background: var(--ink, #101010); } .ds-slot-load span { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.5625rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3, #6a655c); }"
+    },
+    {
+      "name": "Leading Plan Card",
+      "kind": "card",
+      "refersTo": "plan-card-lead",
+      "description": "The recommended membership: the only element that ships permanently elevated, white on the volt block and pulled out of the row above 900px.",
+      "html": "<div class=\"ds-plans\"><article class=\"ds-plan ds-plan-lead\"><div class=\"ds-plan-top\"><span class=\"ds-plan-label\">Повний</span><span class=\"ds-plan-tag\">7 із 10 обирають</span></div><h3>Бронза</h3><div class=\"ds-plan-price\"><b>2 200</b><span>₴ / місяць</span></div><p class=\"ds-plan-sub\">Усі години роботи клубу, усі зони й усі групові заняття.</p><ul><li><svg viewBox=\"0 0 17 17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" aria-hidden=\"true\"><path d=\"M3.5 9 7 12.5 13.5 5\"/></svg><span>Усі шість зон, 05:30–24:00</span></li><li data-off><svg viewBox=\"0 0 17 17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" aria-hidden=\"true\"><path d=\"M5 5l7 7M12 5l-7 7\"/></svg><span>Персональні тренування</span></li></ul><a class=\"ds-btn-ink\" href=\"#\">Обрати БРОНЗУ</a></article></div>",
+      "css": ".ds-plans { background: var(--volt, #d8f84a); border-radius: var(--r-xl, 2.5rem); padding: 2.5rem; max-width: 340px; } .ds-plan { border-radius: var(--r-lg, 1.75rem); border: 1.5px solid rgb(16 16 16 / 0.28); padding: 1.375rem; display: flex; flex-direction: column; color: var(--volt-ink, #101010); transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-plan:hover { transform: translateY(-4px); } .ds-plan-lead { background: var(--white, #fff); border-color: var(--white, #fff); box-shadow: 0 30px 60px -34px rgb(16 16 16 / 0.55); } .ds-plan-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; } .ds-plan-label { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3, #6a655c); } .ds-plan-tag { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.5625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: var(--r-pill, 999px); background: var(--ink, #101010); color: var(--volt, #d8f84a); } .ds-plan h3 { margin: 0.875rem 0 0; font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: 1.875rem; font-weight: 700; letter-spacing: -0.035em; line-height: 1.05; text-transform: uppercase; } .ds-plan-price { display: flex; align-items: baseline; gap: 0.4rem; margin-top: 0.875rem; } .ds-plan-price b { font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: 2.75rem; font-weight: 800; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; } .ds-plan-price span { font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.6875rem; color: var(--ink-3, #6a655c); } .ds-plan-sub { font-family: var(--f-body, \"Geologica\", sans-serif); font-size: 0.8125rem; font-weight: 300; color: var(--ink-2, #3b3833); margin: 0.4rem 0 0; min-height: 3em; } .ds-plan ul { list-style: none; padding: 0; margin: 1.375rem 0 2.25rem; display: grid; gap: 0.55rem; } .ds-plan li { display: grid; grid-template-columns: 17px minmax(0, 1fr); gap: 0.6rem; font-family: var(--f-body, \"Geologica\", sans-serif); font-size: 0.8125rem; font-weight: 300; line-height: 1.45; } .ds-plan li svg { width: 17px; height: 17px; margin-top: 0.1rem; } .ds-plan li[data-off] { opacity: 0.45; } .ds-plan .ds-btn-ink { margin-top: auto; }"
+    },
+    {
+      "name": "Review Card",
+      "kind": "card",
+      "refersTo": "card-review",
+      "description": "White quote card with a volt-deep quote glyph and an avatar footer above a hairline rule.",
+      "html": "<article class=\"ds-say\"><svg class=\"ds-say-q\" viewBox=\"0 0 30 30\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 6v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H3V6zm15 0v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H18V6z\"/></svg><p>Прийшла з протрузією і думкою, що зал мені закритий. За пів року спина стала так, що я знову присідаю зі штангою.</p><div class=\"ds-say-who\"><span class=\"ds-say-face\"></span><span><b>Ірина М.</b><span>у клубі 1 рік</span></span></div></article>",
+      "css": ".ds-say { background: var(--white, #fff); border-radius: var(--r-lg, 1.75rem); padding: 1.375rem; box-shadow: 0 18px 40px -28px rgb(16 16 16 / 0.45); display: flex; flex-direction: column; gap: 0.875rem; max-width: 340px; transition: transform 0.45s cubic-bezier(0.16,1,0.3,1), box-shadow 0.45s cubic-bezier(0.16,1,0.3,1); } .ds-say:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -34px rgb(16 16 16 / 0.55); } .ds-say-q { color: var(--volt-deep, #c2e230); width: 30px; height: 30px; } .ds-say p { margin: 0; font-family: var(--f-body, \"Geologica\", sans-serif); font-size: 0.8125rem; font-weight: 300; color: var(--ink-2, #3b3833); line-height: 1.6; flex: 1; } .ds-say-who { display: flex; align-items: center; gap: 0.65rem; padding-top: 0.875rem; border-top: 1px solid rgb(16 16 16 / 0.07); } .ds-say-face { width: 40px; height: 40px; border-radius: 50%; background: var(--panel-2, #ded9ce); flex-shrink: 0; } .ds-say-who b { display: block; font-family: var(--f-display, \"Unbounded\", sans-serif); font-size: 0.8125rem; font-weight: 700; letter-spacing: -0.02em; color: var(--ink, #101010); } .ds-say-who span span { display: block; font-family: var(--f-data, \"Martian Mono\", monospace); font-size: 0.5625rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3, #6a655c); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Daylight Club",
+    "overview": "This is a club photographed in daylight and printed on warm paper. The page is not a dark gym landing with a hot stripe through it; it is a bright editorial surface — paper ground, soft grey panels, white cards — where photographs of the actual floor carry the weight and typography sets the volume. Nothing is lit from below, nothing glows. Depth comes from a photograph having a lighter or darker room in it, from a card sitting on paper, and from occasional black slabs that read as printed blocks rather than as darkness.\n\nThe signature move is scale plus radius. Panels are cut with very large corners (2.5rem at panel scale, 1.75rem at card scale), so every surface reads as a physical plate laid on the page rather than a rectangle drawn in it. Display type is Unbounded set uppercase, heavy and tightly tracked, at sizes that fill their container edge to edge — the hero headline splits into two halves and parts around a keyed-out athlete standing on the panel's bottom edge. Between the paper stretches and the black slabs sits exactly one saturated colour: a volt lime that appears as a button fill, a full-bleed pricing block, a badge, a focus ring on dark. It is loud precisely because it is rationed and because it is never asked to be text on a light ground.\n\nDensity is generous but not airy: sections breathe on a clamp(3.5rem, 7vw, var(--sp-7)) rhythm, cards pack tightly inside 1.375rem padding, and mono labels at 0.5625rem do the work that decoration would do in a lesser system. Motion is deliberate and named — a hero load choreography, a bottom-to-top curtain wipe on every photograph, small lifts under the cursor, counters that climb once — and all of it is optional: the whole motion language is sealed inside @media (prefers-reduced-motion: no-preference) and the pre-animation hidden state is gated on html.js, so the page is complete without JavaScript and calm for anyone who asks for calm.",
+    "keyCharacteristics": [
+      "Warm paper ground (--paper), grey panels (--panel) and white cards; black slabs used as contrast punctuation, never as the page's base.",
+      "Photography leads. Keyed-out athlete in the hero, vertical zone shots on a staggered grid, square coach portraits, one dark photographic band.",
+      "One accent. Volt lime is a fill colour and a fill colour only.",
+      "Very large radii as identity: 2.5rem panels, 1.75rem cards and photos, pill buttons and pill labels.",
+      "Three self-hosted faces, zero external requests: Unbounded (display, uppercase), Geologica (body, weight 300), Martian Mono (labels and numbers).",
+      "One deceleration curve for the entire page: cubic-bezier(0.16, 1, 0.3, 1)."
+    ],
+    "rules": [
+      { "name": "The Fill-Only Volt Rule", "body": "Volt is a background, never a foreground on light. It may carry --volt-ink text on top of itself, and it may be text on a black slab (em inside dark headings, the required-field asterisk, footer link hover, the seal caption). Volt text on paper, panel or white is forbidden — it measures 1.2:1 and does not exist anywhere in the build.", "section": "colors" },
+      { "name": "The One Slab Rule", "body": "Black is punctuation, not ground. A dark surface appears only as a bounded, rounded panel (band, booking, footer) or as a strip (NDA). The page never inverts wholesale, and two black slabs never touch without paper between them.", "section": "colors" },
+      { "name": "The Audited Ramp Rule", "body": "Every text role in the build was measured, and each clears WCAG AA at its actual size and ground: --ink on paper ≈ 17:1, --ink-2 ≈ 10:1, --ink-3 ≈ 5.1:1 on paper and 4.6:1 on panel (its floor — it never goes on anything darker), --on-dark-2 on --dark ≈ 8.4:1, --volt-ink on volt ≈ 15.7:1, and the volt block's dimmest tint (--tint-ink-60) ≈ 4.6:1. New pairings are measured, not assumed; --ink-3 and --tint-ink-60 are the two that sit closest to the line.", "section": "colors" },
+      { "name": "The Tint-Inside-Volt Rule", "body": "Inside the volt block, secondary text is --volt-ink at 60–75% alpha, not a grey from the ink ramp. Greys go muddy on lime; a tinted black stays in the same family as the block's primary text.", "section": "colors" },
+      { "name": "The Stamp Rule", "body": "Every display and headline setting is uppercase, weight 700–800, tracked in to -0.035em/-0.045em, and set on a line-height below 1. Sentence-case or normally-tracked display type is not part of this world.", "section": "typography" },
+      { "name": "The Three-Voices Rule", "body": "Unbounded speaks in headings and buttons, Geologica in sentences, Martian Mono in anything measured — times, areas, prices, counts, loads, tier names. A number that means something gets mono; a number inside a sentence does not.", "section": "typography" },
+      { "name": "The Wide-Only Break Rule", "body": "Hard line breaks in headings are authored as <br class=\"dt\">, which is display: none by default and only becomes inline at min-width: 900px. A break that flatters a desktop headline must never survive into a phone column.", "section": "typography" },
+      { "name": "The Padding-Stagger Rule", "body": "The zone grid's staggered offsets are padding-top on :nth-child(2, 3, 4, 6), never margin-top. Margin does not contribute to a grid row's height, so a margin-based stagger lets the second row climb into the first and overlap it. This is load-bearing: any future offset inside a grid uses padding.", "section": "layout" },
+      { "name": "The One Shell Rule", "body": "Nothing is truly full-bleed. Even the volt pricing block and the black footer are rounded plates inside the 1360px shell, and the paper gutter is always visible on both sides.", "section": "layout" },
+      { "name": "The Set-Down Rule", "body": "Every shadow uses a large blur, a large negative spread, and no horizontal offset. Elevation reads as contact with the page, never as levitation, and never as a hard offset block.", "section": "elevation" },
+      { "name": "The Elevation-Is-A-State Rule", "body": "Surfaces are flat at rest. Shadow deepens only on hover, and only in the same direction as the card's translate. The single exception is the leading pricing card, whose permanent lift is what marks it as the recommended plan.", "section": "elevation" },
+      { "name": "The Radius-By-Scale Rule", "body": "Corner size scales with the object: plate 2.5rem, card 1.75rem, small object 1.125rem, input 0.625rem, control pill. A card-sized element with a small radius, or an input with a card radius, is off-system.", "section": "shapes" },
+      { "name": "The Radius-Survives-Clipping Rule", "body": "Photographic reveals animate clip-path: inset(… round var(--r-lg)) so the corner radius travels with the wipe. A reveal that squares off a photo mid-animation is a bug, not a variant.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep volt as a fill. On light surfaces it may be a background carrying --volt-ink, never a text colour.",
+      "Do put a 1.5px border on every button, including solid ones, so ghost and filled variants share one silhouette.",
+      "Do match radius to object scale: 2.5rem plates, 1.75rem cards and photos, 1.125rem small objects, 0.625rem inputs, pill controls.",
+      "Do wrap every new motion in @media (prefers-reduced-motion: no-preference), and give the element a visible resting state outside that block.",
+      "Do gate any pre-animation hidden state on html.js (the class is set by an inline script in <head>) so the page renders complete with JavaScript disabled or failed.",
+      "Do trigger load choreography from body.ready with a setTimeout fallback — the build uses 1200ms — so a background tab or a cache-served load can never leave content invisible.",
+      "Do re-arm rAF-throttled scroll handlers on visibilitychange, clearing the pending frame id, so a backgrounded tab does not leave the handler permanently stuck.",
+      "Do use padding-top for staggered offsets inside a grid; margins do not add to row height and cause row overlap.",
+      "Do author desktop-only line breaks as <br class=\"dt\">.",
+      "Do set measured values — times, areas, prices, loads, counts — in Martian Mono, and add tabular-nums to anything that animates.",
+      "Do cap prose at 68ch and ledes at 46ch, and cap headings at 18ch so they break into blocks.",
+      "Do keep every asset local: fonts are self-hosted woff2 subsets with font-display: swap, and the page makes no external requests."
+    ],
+    "donts": [
+      "Don't set volt as text on paper, panel or white — it measures about 1.2:1 and fails every threshold.",
+      "Don't use --ink-4 for text; it is an icon tone. --ink-3 is the lightest ink allowed to carry words on light.",
+      "Don't let a placeholder be the only source of a field's meaning. Every input keeps its persistent mono label; placeholders only illustrate format.",
+      "Don't invert the page to a dark theme. Black is punctuation — bounded rounded slabs and one strip — on a paper ground.",
+      "Don't add hard offset shadows, visible shadow edges, or glows. Shadows are wide, soft, ink-tinted and pushed up with negative spread.",
+      "Don't introduce a second accent hue. The only colours outside the neutral ramp are volt, volt-deep and the two error tones.",
+      "Don't use grey ink text inside the volt block; use --volt-ink at 60–75% alpha instead.",
+      "Don't set display or heading type in sentence case, at loose tracking, or on a line-height above 1.",
+      "Don't animate a photograph's reveal with a plain inset() clip — always carry round var(--r-lg) so corners survive the wipe.",
+      "Don't remove focus visibility. The system uses a 3px --ink outline at 3px offset on light and a volt outline on dark; inputs suppress the outline only because their border turns volt."
+    ]
+  }
+}
