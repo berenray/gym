@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ГАРТ — клуб сили та відновлення · Київ</title>
+<meta name="description" content="Концепт-демо преміального фітнес-клубу: 2 400 м², шість зон, 34 тренери. Навантаження, відновлення й контроль в одному циклі.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f2efe9">
+<meta property="og:title" content="ГАРТ — клуб сили та відновлення">
+<meta property="og:description" content="Гартуй себе. Концепт-демо преміального клубу.">
+<meta property="og:type" content="website">
+<link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geologica-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/hero-athlete.webp" as="image">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="assets/css/gart.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23101010'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='18' font-weight='bold' fill='%23d8f84a' text-anchor='middle'%3E%D0%93%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<!--
+  THESIS: клуб продає не залізо, а повний цикл — навантаження, відновлення, контроль.
+  Відмовляється від категорійного шаблону: темного «залізного» лендингу
+  й від інженерної подачі попередньої версії (креслення, графіки, градуси).
+  OWN-WORLD: теплий папір #f2efe9 і сірі плити, великі радіуси 18–40px,
+  чорні блоки-контрасти й один вольтовий акцент #d8f84a. Фотографія веде:
+  вирізаний атлет у герої, вертикальні знімки зон зі зсувом, квадрати тренерів.
+  Unbounded капсом як штамп, Geologica — текст, Martian Mono — числа.
+  STORY: відвідувач за секунди бачить преміальний клуб із живими людьми,
+  розуміє склад і ціну, записується на безкоштовний пробний день.
+  FIRST VIEWPORT: сіра плита на всю ширину; «ГАРТУЙ» ліворуч і «СЕБЕ» праворуч
+  на одній лінії, між ними вирізаний атлет; знизу дек, вольтова пігулка CTA,
+  чіп із трьома обличчями тренерів і темна картка з відео.
+  FORM: світлий фотоведений лендинг за пінненим референсом клієнта.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+<a class="skip" href="#main">Перейти до вмісту</a>
+
+<div class="nda">
+  <div class="shell nda__row">
+    <span class="nda__tag">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="10" height="6.5" rx="1.5"/><path d="M5.5 7V4.8a2.5 2.5 0 0 1 5 0V7"/></svg>
+      NDA · концепт
+    </span>
+    <span class="nda__long">Демонстраційний проєкт. Бренд, ціни, розклад, тренери й відгуки — вигадані.</span>
+    <span class="nda__short">Усі дані вигадані</span>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="shell nav__row">
+    <a class="mark" href="#top" aria-label="ГАРТ — на початок">
+      <span class="mark__badge" aria-hidden="true">Г</span>
+      <span class="mark__word">ГАРТ</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Основна навігація">
+      <a class="nav__link" href="#zones">Зони</a>
+      <a class="nav__link" href="#method">Метод</a>
+      <a class="nav__link" href="#coaches">Тренери</a>
+      <a class="nav__link" href="#schedule">Розклад</a>
+      <a class="nav__link" href="#plans">Абонементи</a>
+    </nav>
+
+    <a class="btn nav__cta" href="#book">
+      Пробний день
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+    </a>
+
+    <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Відкрити меню">
+      <svg class="burger__bars" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 4.5h16M1 9h16M1 13.5h16"/></svg>
+      <svg class="burger__x" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3.5 3.5l11 11M14.5 3.5l-11 11"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-open="false">
+  <a class="drawer__link" href="#zones">Зони <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15 15 3M6 3h9v9"/></svg></a>
+  <a class="drawer__link" href="#method">Метод <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15 15 3M6 3h9v9"/></svg></a>
+  <a class="drawer__link" href="#coaches">Тренери <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15 15 3M6 3h9v9"/></svg></a>
+  <a class="drawer__link" href="#schedule">Розклад <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15 15 3M6 3h9v9"/></svg></a>
+  <a class="drawer__link" href="#plans">Абонементи <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 15 15 3M6 3h9v9"/></svg></a>
+  <a class="btn btn--block" href="#book" style="margin-top:2rem">Записатися на пробний день</a>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ======================= ГЕРОЙ ======================= -->
+<section class="hero">
+  <div class="shell">
+    <div class="hero__panel">
+      <svg class="hero__wm" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="#d3cec3" stroke-width="26">
+          <circle cx="215" cy="300" r="196"/>
+          <circle cx="215" cy="300" r="104"/>
+          <circle cx="985" cy="300" r="196"/>
+          <circle cx="985" cy="300" r="104"/>
+        </g>
+        <g stroke="#d3cec3" stroke-width="26"><path d="M215 300h770"/></g>
+      </svg>
+
+      <div class="hero__stage">
+        <h1 class="hero__title">
+          <span>Гартуй</span>
+          <span>себе</span>
+        </h1>
+
+        <img class="hero__cut" src="assets/img/hero-athlete.webp" width="615" height="1500"
+             alt="Спортсменка зі схрещеними руками — кадр із демонстраційної фотобібліотеки" fetchpriority="high">
+
+        <div class="hero__copy">
+          <p class="lede">
+            Преміальний клуб на Печерську: 2 400 м², шість зон і 34 тренери в штаті.
+            Навантаження, відновлення й контроль — в одному циклі й на одному поверсі.
+          </p>
+          <div class="hero__acts">
+            <a class="btn" href="#book">
+              Пробний день — безкоштовно
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#schedule">Розклад</a>
+          </div>
+        </div>
+
+        <div class="hero__side">
+          <button class="vcard" type="button" id="tourBtn" aria-label="Відеотур клубом (у демо не відтворюється)">
+            <img src="assets/img/card-video.webp" width="880" height="550" alt="" loading="lazy">
+            <span class="vcard__play" aria-hidden="true"><span>
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5 13 8l-9 5.5z"/></svg>
+            </span></span>
+          </button>
+
+          <div class="chip">
+            <span class="chip__faces">
+              <img src="assets/img/coach-1.webp" width="34" height="34" alt="" loading="lazy">
+              <img src="assets/img/coach-2.webp" width="34" height="34" alt="" loading="lazy">
+              <img src="assets/img/coach-4.webp" width="34" height="34" alt="" loading="lazy">
+            </span>
+            <span class="chip__meta"><b>34</b><span>тренери в штаті</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts" data-rise>
+      <div class="fact"><b><span class="count" data-to="2400">2 400</span><i>м²</i></b><span>Площа клубу</span></div>
+      <div class="fact"><b><span class="count" data-to="6">6</span></b><span>Зон під одним дахом</span></div>
+      <div class="fact"><b><span class="count" data-to="34">34</span></b><span>Тренери в штаті</span></div>
+      <div class="fact"><b>05:30<i>–24:00</i></b><span>Щодня</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ЗОНИ ======================= -->
+<section class="section" id="zones">
+  <div class="shell">
+    <div class="head">
+      <h2 data-rise>Шість зон.<br class="dt">Один поверх.</h2>
+      <p class="prose" data-rise>
+        Абонемент у клуб — це передусім куплений доступ до простору.
+        Ось увесь простір: без переходів між корпусами й без черги до стійки.
+      </p>
+    </div>
+
+    <div class="zones">
+      <a class="zone" href="#book" data-rise>
+        <div class="zone__shot">
+          <img src="assets/img/zone-heavy.webp" width="760" height="950" alt="Стійка з дисками й штангами у важкій зоні" loading="lazy">
+          <span class="zone__area">620 м²</span>
+        </div>
+        <div class="zone__bar">
+          <div class="zone__txt"><h3>Важка зона</h3><p>Помости, рами, вільні ваги</p></div>
+          <span class="round" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15 15 3M6 3h9v9"/></svg></span>
+        </div>
+      </a>
+
+      <a class="zone" href="#book" data-rise>
+        <div class="zone__shot">
+          <img src="assets/img/zone-machines.webp" width="760" height="950" alt="Ряд гантелей і тренажерів біля панорамного вікна" loading="lazy">
+          <span class="zone__area">480 м²</span>
+        </div>
+        <div class="zone__bar">
+          <div class="zone__txt"><h3>Машинний зал</h3><p>Technogym, Hammer Strength</p></div>
+          <span class="round" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15 15 3M6 3h9v9"/></svg></span>
+        </div>
+      </a>
+
+      <a class="zone" href="#book" data-rise>
+        <div class="zone__shot">
+          <img src="assets/img/zone-cardio.webp" width="760" height="950" alt="Група людей на біговій доріжці в залі" loading="lazy">
+          <span class="zone__area">300 м²</span>
+        </div>
+        <div class="zone__bar">
+          <div class="zone__txt"><h3>Кардіо-палуба</h3><p>Панорама на Дніпро</p></div>
+          <span class="round" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15 15 3M6 3h9v9"/></svg></span>
+        </div>
+      </a>
+
+      <a class="zone" href="#book" data-rise>
+        <div class="zone__shot">
+          <img src="assets/img/zone-field.webp" width="760" height="950" alt="Функціональне тренування з еспандерами" loading="lazy">
+          <span class="zone__area">340 м²</span>
+        </div>
+        <div class="zone__bar">
+          <div class="zone__txt"><h3>Полігон</h3><p>Сани, канати, смуга 22 м</p></div>
+          <span class="round" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15 15 3M6 3h9v9"/></svg></span>
+        </div>
+      </a>
+
+      <a class="zone" href="#book" data-rise>
+        <div class="zone__shot">
+          <img src="assets/img/zone-studio.webp" width="760" height="950" alt="Групове заняття з гантелями у світлій студії" loading="lazy">
+          <span class="zone__area">300 м²</span>
+        </div>
+        <div class="zone__bar">
+          <div class="zone__txt"><h3>Студії</h3><p>Дві зали під групові</p></div>
+          <span class="round" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15 15 3M6 3h9v9"/></svg></span>
+        </div>
+      </a>
+
+      <a class="zone" href="#book" data-rise>
+        <div class="zone__shot">
+          <img src="assets/img/zone-temper.webp" width="760" height="950" alt="Дерев'яна сауна з теплим світлом" loading="lazy">
+          <span class="zone__area">360 м²</span>
+        </div>
+        <div class="zone__bar">
+          <div class="zone__txt"><h3>Відновлення</h3><p>Сауна, хамам, купіль, масаж</p></div>
+          <span class="round" aria-hidden="true"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 15 15 3M6 3h9v9"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ТЕМНА СМУГА ======================= -->
+<section class="section--tight">
+  <div class="shell">
+    <div class="band" data-rise>
+      <div class="band__bg"><img src="assets/img/band-box.webp" width="1680" height="720" alt="" loading="lazy"></div>
+      <div class="band__in">
+        <h2>Ми не тренуємо. Ми ведемо <em>цикл</em>.</h2>
+        <div>
+          <p class="prose prose--dark">
+            Навантаження без відновлення ламає навіть підготовлених. Тому сауна, купіль
+            і масаж у нас стоять у тижневому графіку поруч із тренуваннями — з тим самим
+            статусом обов'язкового. А кожні шість тижнів цикл замикається повторним заміром:
+            числа порівнюються з попередніми, і програма переписується під них.
+          </p>
+          <a class="btn btn--on-dark" href="#method" style="margin-top:1.4rem">Як це влаштовано</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= МЕТОД ======================= -->
+<section class="section" id="method">
+  <div class="shell">
+    <div class="head">
+      <h2 data-rise>Цикл із чотирьох кроків</h2>
+      <p class="prose" data-rise>
+        Нічого езотеричного: заміряли, навантажили, відновили, заміряли ще раз.
+        Різниця в тому, що жоден крок не можна пропустити — і ми за цим стежимо.
+      </p>
+    </div>
+
+    <ol class="steps" data-rise>
+      <li class="step">
+        <span class="step__n">01</span>
+        <h3>Заміри й план</h3>
+        <p>Дві години: склад тіла, рухові тести, тиск, сон, історія травм. На виході — письмовий план на шість тижнів, а не абонемент і побажання успіху.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">02</span>
+        <h3>Навантаження</h3>
+        <p>Три-чотири сесії на тиждень у важкій зоні чи на полігоні. Прогресія записана: вага, підходи, швидкість. Тренер бачить журнал до того, як ви зайшли.</p>
+      </li>
+      <li class="step">
+        <span class="step__n">03</span>
+        <h3>Відновлення</h3>
+        <p>Сауна, хамам, крижана купіль, масаж і мобільність. Вписані в тижневий графік, а не «якщо буде час після залу».</p>
+      </li>
+      <li class="step">
+        <span class="step__n">04</span>
+        <h3>Повторний замір</h3>
+        <p>Ті самі тести, ті самі умови, кожні шість тижнів. Якщо графік не рухається — міняємо метод, а не мотивуємо.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======================= ТРЕНЕРИ ======================= -->
+<section class="section" id="coaches">
+  <div class="shell">
+    <div class="head">
+      <h2 data-rise>Люди, а не<br class="dt">розклад змін</h2>
+      <p class="prose" data-rise>
+        За вашим планом закріплена конкретна людина з іменем, стажем і кваліфікацією,
+        яку можна перевірити. На пробний візит ми ставимо тренера з тієї зони,
+        що вам цікава, — не того, хто вільний.
+      </p>
+    </div>
+
+    <div class="coaches">
+      <article class="coach" data-rise>
+        <div class="coach__shot">
+          <img src="assets/img/coach-1.webp" width="620" height="620" alt="Портрет тренера Остапа Кравця" loading="lazy">
+          <span class="coach__yrs">12 років</span>
+        </div>
+        <h3>Остап Кравець</h3>
+        <p class="coach__role">Сила · пауерліфтинг</p>
+        <p>Веде важку зону. Присід і тяга у людей із сидячою роботою й старими спинами. Не бере в роботу без рухового тесту.</p>
+      </article>
+
+      <article class="coach" data-rise>
+        <div class="coach__shot">
+          <img src="assets/img/coach-2.webp" width="620" height="620" alt="Портрет тренерки Ярини Дідух" loading="lazy">
+          <span class="coach__yrs">9 років</span>
+        </div>
+        <h3>Ярина Дідух</h3>
+        <p class="coach__role">Мобільність · реабілітація</p>
+        <p>Працює на стику залу й фізичної терапії. До неї потрапляють ті, кому боляче тягнутись, і ті, хто повертається після операції.</p>
+      </article>
+
+      <article class="coach" data-rise>
+        <div class="coach__shot">
+          <img src="assets/img/coach-3.webp" width="620" height="620" alt="Портрет тренера Мирослава Гриціва" loading="lazy">
+          <span class="coach__yrs">15 років</span>
+        </div>
+        <h3>Мирослав Гриців</h3>
+        <p class="coach__role">Важка атлетика</p>
+        <p>Ставить ривок і поштовх з нуля. Чотири помости, відеозйомка кожного підходу, розбір техніки покадрово біля платформи.</p>
+      </article>
+
+      <article class="coach" data-rise>
+        <div class="coach__shot">
+          <img src="assets/img/coach-4.webp" width="620" height="620" alt="Портрет тренерки Оксани Бондар" loading="lazy">
+          <span class="coach__yrs">7 років</span>
+        </div>
+        <h3>Оксана Бондар</h3>
+        <p class="coach__role">Метаболічні · кардіо</p>
+        <p>Веде інтервальні класи й тестування на VO₂max. Розписує пульсові зони так, щоб на кардіо-палубі працювали за числами.</p>
+      </article>
+
+      <article class="coach" data-rise>
+        <div class="coach__shot">
+          <img src="assets/img/coach-5.webp" width="620" height="620" alt="Портрет тренера Тараса Вовка" loading="lazy">
+          <span class="coach__yrs">11 років</span>
+        </div>
+        <h3>Тарас Вовк</h3>
+        <p class="coach__role">Єдиноборства</p>
+        <p>Бокс і боротьба в клубному форматі: без спарингів на результат, з повним акцентом на техніку, дихання й роботу ніг.</p>
+      </article>
+
+      <article class="coach" data-rise>
+        <div class="coach__shot">
+          <img src="assets/img/coach-6.webp" width="620" height="620" alt="Портрет тренерки Дани Ліщук" loading="lazy">
+          <span class="coach__yrs">8 років</span>
+        </div>
+        <h3>Дана Ліщук</h3>
+        <p class="coach__role">Відновлення · сон</p>
+        <p>Відповідає за четвертий поверх: протоколи сауни й купелі, спортивний масаж, сон і навантаження. Скаже піти додому, коли треба піти додому.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= РОЗКЛАД ======================= -->
+<section class="section" id="schedule">
+  <div class="shell">
+    <div class="head">
+      <h2 data-rise>Тиждень,<br class="dt">який видно наперед</h2>
+      <p class="prose" data-rise>
+        Біля кожного заняття стоїть його навантаження: одна крапка — дихання й розтяжка,
+        три — вихід із зони, після якого ви йдете в сауну. Так видно, з чого зібрано тиждень,
+        ще до першого візиту.
+      </p>
+    </div>
+
+    <div data-rise>
+      <div class="days" role="tablist" aria-label="Дні тижня" id="days"></div>
+      <div class="sched" id="sched"></div>
+      <div class="sched__foot">
+        <p class="label">Групові заняття — за абонементом БРОНЗА і вище</p>
+        <p class="label">Запис у застосунку клубу за 7 днів</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= АБОНЕМЕНТИ ======================= -->
+<section class="section" id="plans">
+  <div class="shell">
+    <div class="plans" data-rise>
+      <svg class="plans__wm" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="#c2e230" stroke-width="26">
+          <circle cx="1010" cy="120" r="200"/>
+          <circle cx="1010" cy="120" r="106"/>
+          <circle cx="180" cy="540" r="200"/>
+          <circle cx="180" cy="540" r="106"/>
+        </g>
+      </svg>
+
+      <div class="plans__head">
+        <h2>Три абонементи<br class="dt">без зірочок</h2>
+        <p>
+          Без прихованих платежів за рушник, шафку чи вхід у сауну: те, що в тарифі,
+          працює з першого дня. Заморозка до 30 днів безкоштовна, річна оплата — на 15% дешевше.
+        </p>
+      </div>
+
+      <div class="plans__grid">
+        <article class="plan">
+          <div class="plan__top"><span class="label" style="color:rgb(16 16 16 / .6)">Денний</span></div>
+          <h3>Соло</h3>
+          <div class="plan__price"><b class="num">1 450</b><span>₴ / місяць</span></div>
+          <p class="plan__sub">Доступ 07:00–16:00. Для тих, хто тренується між справами.</p>
+          <ul>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Важка зона, машинний зал, кардіо</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Інструктаж і план на 6 тижнів</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Рушник і шафка</span></li>
+            <li data-off><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 5l7 7M12 5l-7 7"/></svg><span>Групові заняття</span></li>
+            <li data-off><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 5l7 7M12 5l-7 7"/></svg><span>Зона відновлення</span></li>
+          </ul>
+          <a class="btn btn--ink btn--block" href="#book">Обрати СОЛО</a>
+        </article>
+
+        <article class="plan plan--lead">
+          <div class="plan__top"><span class="label" style="color:var(--ink-3)">Повний</span><span class="plan__tag">7 із 10 обирають</span></div>
+          <h3>Бронза</h3>
+          <div class="plan__price"><b class="num">2 200</b><span>₴ / місяць</span></div>
+          <p class="plan__sub">Усі години роботи клубу, усі зони й усі групові заняття.</p>
+          <ul>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Усі шість зон, 05:30–24:00</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Групові без обмеження кількості</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Контрольний замір кожні 6 тижнів</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Сауна й хамам</span></li>
+            <li data-off><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 5l7 7M12 5l-7 7"/></svg><span>Персональні тренування</span></li>
+          </ul>
+          <a class="btn btn--ink btn--block" href="#book">Обрати БРОНЗУ</a>
+        </article>
+
+        <article class="plan">
+          <div class="plan__top"><span class="label" style="color:rgb(16 16 16 / .6)">Повний цикл</span></div>
+          <h3>Максимум</h3>
+          <div class="plan__price"><b class="num">3 400</b><span>₴ / місяць</span></div>
+          <p class="plan__sub">Усе з БРОНЗИ плюс відновлення й персональний супровід.</p>
+          <ul>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Усе, що в БРОНЗІ</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Купіль, масаж, солярій</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>2 персональних тренування щомісяця</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Діагностика VO₂max і склад тіла</span></li>
+            <li><svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3.5 9 7 12.5 13.5 5"/></svg><span>Гостьовий візит раз на місяць</span></li>
+          </ul>
+          <a class="btn btn--ink btn--block" href="#book">Обрати МАКСИМУМ</a>
+        </article>
+      </div>
+
+      <div class="plans__foot">
+        <p>Разовий візит 350 ₴ · заморозка 30 днів безкоштовна</p>
+        <p>Пробний день не потребує оплати й картки</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ВІДГУКИ ======================= -->
+<section class="section" id="says">
+  <div class="shell">
+    <div class="head">
+      <h2 data-rise>Що кажуть у залі</h2>
+      <p class="prose" data-rise>
+        Тексти нижче написані для демонстрації разом з рештою контенту й не належать
+        реальним людям. У бойовій версії тут стоять справжні відгуки клубу.
+      </p>
+    </div>
+
+    <div class="says">
+      <article class="say" data-rise>
+        <svg class="say__q" viewBox="0 0 30 30" fill="currentColor" aria-hidden="true"><path d="M12 6v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H3V6zm15 0v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H18V6z"/></svg>
+        <p>Прийшла з протрузією і думкою, що зал мені закритий. Ярина за пів року поставила спину так, що я знову присідаю зі штангою. Плюс тут не дивляться на тебе, коли ти робиш щось повільно.</p>
+        <div class="say__who">
+          <img src="assets/img/coach-4.webp" width="40" height="40" alt="" loading="lazy">
+          <span><b>Ірина М.</b><span>у клубі 1 рік</span></span>
+        </div>
+      </article>
+
+      <article class="say" data-rise>
+        <svg class="say__q" viewBox="0 0 30 30" fill="currentColor" aria-hidden="true"><path d="M12 6v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H3V6zm15 0v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H18V6z"/></svg>
+        <p>Ходив у три мережеві зали до цього. Тут вперше хтось подивився мій журнал і сказав, що я три місяці роблю одне й те саме. Замір кожні шість тижнів — це те, через що я лишився.</p>
+        <div class="say__who">
+          <img src="assets/img/coach-5.webp" width="40" height="40" alt="" loading="lazy">
+          <span><b>Андрій К.</b><span>у клубі 2 роки</span></span>
+        </div>
+      </article>
+
+      <article class="say" data-rise>
+        <svg class="say__q" viewBox="0 0 30 30" fill="currentColor" aria-hidden="true"><path d="M12 6v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H3V6zm15 0v7.5c0 5-3 8.4-7.5 10.5l-1.5-3c3-1.6 4.5-3.6 4.5-6H18V6z"/></svg>
+        <p>Беру МАКСИМУМ виключно через четвертий поверх. Після важкої сесії купіль і масаж — і наступного дня я робочий. Порахував: окремо це коштувало б мені дорожче.</p>
+        <div class="say__who">
+          <img src="assets/img/coach-3.webp" width="40" height="40" alt="" loading="lazy">
+          <span><b>Дмитро Л.</b><span>у клубі 8 місяців</span></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ЗАПИС ======================= -->
+<section class="section" id="book">
+  <div class="shell">
+    <div class="book" data-rise>
+      <div class="book__grid">
+        <div>
+          <h2>Один день, <em>безкоштовно</em></h2>
+          <p class="prose prose--dark" style="margin-top:1.2rem">
+            Пробний день — це повний доступ на добу плюс годинна діагностика з тренером.
+            Ніякої презентації абонементів: ви тренуєтесь, ми міряємо, далі ви вирішуєте самі.
+          </p>
+
+          <div class="why">
+            <div class="why__row">
+              <svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="15" cy="15" r="11"/><path d="M15 8.5V15l4.5 2.8"/></svg>
+              <div><h4>Доба, а не година</h4><p>Можна прийти зранку, повернутись увечері й побачити клуб у різному навантаженні.</p></div>
+            </div>
+            <div class="why__row">
+              <svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="15" cy="11" r="4.5"/><path d="M5.5 25a9.5 9.5 0 0 1 19 0"/></svg>
+              <div><h4>Тренер під ваш запит</h4><p>Ми читаємо, що ви написали у формі, і ставимо людину з відповідної зони.</p></div>
+            </div>
+            <div class="why__row">
+              <svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 24.5V7.5A2.5 2.5 0 0 1 8.5 5H18l6 6v13.5A2.5 2.5 0 0 1 21.5 27h-13A2.5 2.5 0 0 1 6 24.5z"/><path d="M17.5 5v6.5H24"/><path d="M10.5 16h9M10.5 20h6"/></svg>
+              <div><h4>План на папері</h4><p>Після діагностики ви отримуєте письмовий шеститижневий план, навіть якщо не купите абонемент.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" id="bookForm" novalidate>
+          <div class="form__ok" id="formOk" data-show="false" role="status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M7.5 12.4 10.7 15.6 16.5 9"/></svg>
+            <div>
+              <p id="okMain">Заявку прийнято.</p>
+              <p>Це демонстраційний сайт: форма перевіряє дані у браузері й нікуди їх не надсилає. У бойовій версії тут стоїть інтеграція з CRM клубу.</p>
+            </div>
+          </div>
+
+          <div class="fields">
+            <div class="field" id="f-name">
+              <label for="i-name">Ім'я <b>*</b></label>
+              <input id="i-name" name="name" type="text" autocomplete="given-name" placeholder="Андрій" required aria-describedby="e-name">
+              <span data-err id="e-name" role="alert"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="8" cy="8" r="6.4"/><path d="M8 4.8v3.8M8 10.8v.6"/></svg><i></i></span>
+            </div>
+
+            <div class="field" id="f-phone">
+              <label for="i-phone">Телефон <b>*</b></label>
+              <input id="i-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+380 XX XXX XX XX" required aria-describedby="e-phone">
+              <span data-err id="e-phone" role="alert"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="8" cy="8" r="6.4"/><path d="M8 4.8v3.8M8 10.8v.6"/></svg><i></i></span>
+            </div>
+
+            <div class="field" id="f-date">
+              <label for="i-date">Бажана дата <b>*</b></label>
+              <input id="i-date" name="date" type="date" required aria-describedby="e-date">
+              <span data-err id="e-date" role="alert"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="8" cy="8" r="6.4"/><path d="M8 4.8v3.8M8 10.8v.6"/></svg><i></i></span>
+            </div>
+
+            <div class="field" id="f-goal">
+              <label for="i-goal">Що вам цікаво</label>
+              <select id="i-goal" name="goal">
+                <option value="heavy">Важка зона й сила</option>
+                <option value="metabolic">Схуднення й витривалість</option>
+                <option value="rehab">Відновлення після травми</option>
+                <option value="group">Групові заняття</option>
+                <option value="spa">Тільки зона відновлення</option>
+                <option value="unsure">Ще не визначився</option>
+              </select>
+            </div>
+
+            <div class="field field--wide">
+              <label for="i-note">Що варто знати заздалегідь</label>
+              <textarea id="i-note" name="note" placeholder="Травми, обмеження, зручний час — коротко"></textarea>
+              <small>Не обов'язково, але допомагає підібрати тренера на перший візит.</small>
+            </div>
+          </div>
+
+          <div class="form__foot">
+            <p class="label label--dark">Поля з <b style="color:var(--volt)">*</b> обов'язкові. Нічого не надсилається: це демо.</p>
+            <button class="btn" type="submit" id="submitBtn">
+              Записатися
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ======================= ПІДВАЛ ======================= -->
+<footer class="foot">
+  <div class="shell">
+    <div class="foot__panel">
+      <div class="foot__grid">
+        <div>
+          <a class="mark" href="#top" aria-label="ГАРТ — на початок">
+            <span class="mark__badge" aria-hidden="true">Г</span>
+            <span class="mark__word">ГАРТ</span>
+          </a>
+          <p class="prose prose--dark" style="font-size:var(--t-sm);max-width:32ch;margin-top:1rem">
+            Клуб сили та відновлення. Навантаження, відпочинок і контроль
+            в одному циклі й на одному поверсі.
+          </p>
+        </div>
+
+        <div>
+          <h4>Розділи</h4>
+          <ul>
+            <li><a href="#zones">Зони</a></li>
+            <li><a href="#method">Метод</a></li>
+            <li><a href="#coaches">Тренери</a></li>
+            <li><a href="#schedule">Розклад</a></li>
+            <li><a href="#plans">Абонементи</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Клуб</h4>
+          <address>
+            вул. Ливарна, 14<br>
+            Печерськ, Київ<br><br>
+            <a href="tel:+380440000000">+380 (44) 000-00-00</a><br>
+            <a href="mailto:hello@gart.example">hello@gart.example</a>
+          </address>
+        </div>
+
+        <div class="seal">
+          <b>NDA · КОНЦЕПТ</b>
+          <p>
+            Демонстраційний проєкт. «ГАРТ» — вигаданий бренд, створений як приклад роботи.
+            Адреса, телефони, ціни, розклад, тренери й відгуки не існують і не описують
+            жодного реального клубу. Фотографії — зі стокової бібліотеки Unsplash.
+          </p>
+        </div>
+      </div>
+
+      <svg class="foot__word" viewBox="0 0 1000 130" aria-hidden="true">
+        <text x="500" y="108" text-anchor="middle" font-family="Unbounded, sans-serif" font-size="132"
+              font-weight="800" letter-spacing="6" fill="#f4f2ee">ГАРТ</text>
+      </svg>
+
+      <div class="foot__bar">
+        <p>© 2026 ГАРТ · концепт-демо · усі дані вигадані</p>
+        <p>Дизайн і код: приклад роботи</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/gart.js" defer></script>
+</body>
+</html>
