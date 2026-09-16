@@ -226,45 +226,6 @@ p { text-wrap: pretty; }
 
 .round svg { width: 17px; height: 17px; }
 
-/* ---------- стрічка NDA ---------- */
-.nda {
-  background: var(--ink);
-  color: var(--on-dark-2);
-  padding-block: 0.55rem;
-}
-
-.nda__row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  text-align: center;
-  font-family: var(--f-data);
-  font-size: 0.625rem;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.nda__tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--r-pill);
-  background: var(--volt);
-  color: var(--volt-ink);
-  font-weight: 700;
-}
-
-.nda__tag svg { width: 11px; height: 11px; }
-.nda__short { display: none; }
-
-@media (max-width: 680px) {
-  .nda__long { display: none; }
-  .nda__short { display: inline; }
-}
-
 /* ---------- навігація ---------- */
 .nav {
   position: sticky;
@@ -573,7 +534,8 @@ p { text-wrap: pretty; }
 .fact { background: var(--paper); padding: var(--sp-3) var(--sp-3) calc(var(--sp-3) - 0.2rem); }
 .fact b { display: block; font-family: var(--f-display); font-size: clamp(1.5rem, 2.4vw, 2.125rem); font-weight: 800; letter-spacing: -0.05em; }
 .fact b i { font-style: normal; font-size: 0.55em; color: var(--ink-3); margin-left: 0.15em; }
-.fact span { display: block; margin-top: 0.15rem; font-family: var(--f-data); font-size: 0.5625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+/* тільки прямий нащадок: усередині <b> живе ще span.count із числом */
+.fact > span { display: block; margin-top: 0.15rem; font-family: var(--f-data); font-size: 0.5625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
 
 /* ---------- заголовок секції ---------- */
 .head { display: grid; gap: var(--sp-3); margin-bottom: var(--sp-4); }
@@ -1053,15 +1015,15 @@ p { text-wrap: pretty; }
 @media (min-width: 860px) { .foot__grid { grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 0.8fr)) minmax(0, 1.1fr); } }
 
 .foot .mark__word { color: var(--on-dark); }
+/* на чорній панелі чорний кружечок зникав — вивертаємо знак */
+.foot .mark__badge { background: var(--volt); color: var(--volt-ink); }
 .foot h4 { font-family: var(--f-data); font-size: 0.5625rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--on-dark-2); margin-bottom: var(--sp-2); }
 .foot ul { list-style: none; padding: 0; display: grid; gap: 0.1rem; }
 .foot a { color: var(--on-dark); text-decoration: none; font-size: var(--t-sm); display: inline-block; padding-block: 0.45rem; transition: color 0.2s; }
 .foot a:hover { color: var(--volt); }
 .foot address { font-style: normal; font-size: var(--t-sm); color: var(--on-dark-2); line-height: 1.75; }
 
-.seal { border: 1.5px dashed rgb(216 248 74 / 0.5); border-radius: var(--r-md); padding: var(--sp-3); }
-.seal b { display: inline-block; font-family: var(--f-data); font-size: 0.5625rem; font-weight: 700; letter-spacing: 0.12em; color: var(--volt); margin-bottom: 0.4rem; }
-.seal p { font-size: var(--t-xs); color: var(--on-dark-2); line-height: 1.65; }
+.foot .note { font-size: var(--t-xs); color: var(--on-dark-2); line-height: 1.7; max-width: 34ch; }
 
 .foot__word { width: 100%; margin-top: var(--sp-4); opacity: 0.14; }
 

@@ -145,7 +145,6 @@
       { "name": "reduced-motion", "value": "@media (prefers-reduced-motion: reduce) → 0.001ms", "purpose": "All animation and transition durations clamped; smooth scrolling turned off; counters print their final value." }
     ],
     "breakpoints": [
-      { "name": "nda-short", "value": "max-width: 680px" },
       { "name": "form-2col", "value": "620px" },
       { "name": "zones-3col", "value": "700px" },
       { "name": "steps-2col-coaches-3col", "value": "760px" },
@@ -268,7 +267,7 @@
     ],
     "rules": [
       { "name": "The Fill-Only Volt Rule", "body": "Volt is a background, never a foreground on light. It may carry --volt-ink text on top of itself, and it may be text on a black slab (em inside dark headings, the required-field asterisk, footer link hover, the seal caption). Volt text on paper, panel or white is forbidden — it measures 1.2:1 and does not exist anywhere in the build.", "section": "colors" },
-      { "name": "The One Slab Rule", "body": "Black is punctuation, not ground. A dark surface appears only as a bounded, rounded panel (band, booking, footer) or as a strip (NDA). The page never inverts wholesale, and two black slabs never touch without paper between them.", "section": "colors" },
+      { "name": "The One Slab Rule", "body": "Black is punctuation, not ground. A dark surface appears only as a bounded, rounded panel (band, booking, footer). The page never inverts wholesale, and two black slabs never touch without paper between them.", "section": "colors" },
       { "name": "The Audited Ramp Rule", "body": "Every text role in the build was measured, and each clears WCAG AA at its actual size and ground: --ink on paper ≈ 17:1, --ink-2 ≈ 10:1, --ink-3 ≈ 5.1:1 on paper and 4.6:1 on panel (its floor — it never goes on anything darker), --on-dark-2 on --dark ≈ 8.4:1, --volt-ink on volt ≈ 15.7:1, and the volt block's dimmest tint (--tint-ink-60) ≈ 4.6:1. New pairings are measured, not assumed; --ink-3 and --tint-ink-60 are the two that sit closest to the line.", "section": "colors" },
       { "name": "The Tint-Inside-Volt Rule", "body": "Inside the volt block, secondary text is --volt-ink at 60–75% alpha, not a grey from the ink ramp. Greys go muddy on lime; a tinted black stays in the same family as the block's primary text.", "section": "colors" },
       { "name": "The Stamp Rule", "body": "Every display and headline setting is uppercase, weight 700–800, tracked in to -0.035em/-0.045em, and set on a line-height below 1. Sentence-case or normally-tracked display type is not part of this world.", "section": "typography" },

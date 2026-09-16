@@ -23,7 +23,7 @@ The page must work completely for audience 2, because that is the only way it co
 
 A portfolio/demo landing page for a fictional premium fitness club, built to be shown to real gym clients as proof of capability. Success = the buyer asks "how much and how fast for mine", not "can you also do X".
 
-Because it is a demo, it carries a visible NDA/concept notice: the brand, prices, schedule, trainers and testimonials are invented and must never be presented as a real club's data.
+Because it is a concept piece, the brand, prices, schedule, trainers and testimonials are invented and must never be presented as a real club's data. The page carries a short concept note in the footer and `noindex` in the head; the loud top-of-page disclaimer was removed at the user's request on 16 Sep 2026 so the artefact reads as a finished product when shown to a client.
 
 ## Positioning
 
@@ -47,13 +47,13 @@ The fictional club is positioned as a **premium city club, not a discount chain*
 ## Brand Commitments
 
 - The reference the user pinned (Dribbble "MURA" gym landing) is a **starting point, explicitly not a target to match**. The user's instruction: do not land at ~90% similarity. Borrow the energy tier — oversized grotesk display type, one hot accent color, high-contrast blocks, card-based class grid — and diverge on world, structure and craft.
-- The demo brand must be obviously fictional and NDA-labeled.
+- The demo brand must stay obviously fictional in substance (invented name, placeholder phone number), even though the page no longer carries a prominent disclaimer.
 - No real club names, logos, addresses or people.
 
 ## Evidence on Hand
 
 - Reference image only (Dribbble screenshot, saved to the session scratchpad). No client brief, no real copy, no photography, no logo files, no testimonials, no metrics.
-- Everything numeric on the page (prices, member counts, hours, ratings) is invented for the demo and must be presented as such via the NDA notice. Future work must not promote these numbers to fact.
+- Everything numeric on the page (prices, member counts, hours, ratings) is invented for the demo. Future work must not promote these numbers to fact, and must not present the testimonials or staff photographs as real people.
 
 ## Product Principles
 

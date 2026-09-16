@@ -215,6 +215,10 @@
     };
     el.textContent = '0';
     requestAnimationFrame(tick);
+    // у фоновій вкладці кадр не приходить — не лишаємо показник на нулі
+    setTimeout(() => {
+      if (el.textContent !== nf.format(to)) el.textContent = nf.format(to);
+    }, dur + 500);
   }
 
   const counters = $$('.count');
@@ -254,7 +258,7 @@
   }
 
   /* ============================================================
-     5. Картка відеотуру — чесно кажемо, що це демо
+     5. Картка відеотуру
      ============================================================ */
   const tour = $('#tourBtn');
   if (tour) {
@@ -262,7 +266,7 @@
       const note = document.createElement('p');
       note.className = 'label';
       note.style.cssText = 'margin-top:.6rem;max-width:22rem';
-      note.textContent = 'Відеотур у демоверсії не відтворюється — тут стоїть плеєр клубу.';
+      note.textContent = 'Відеотур поки не підключений.';
       note.setAttribute('role', 'status');
       const holder = tour.parentElement;
       if (!holder.querySelector('[role="status"]')) holder.appendChild(note);

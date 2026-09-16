@@ -295,7 +295,7 @@ who asks for calm.
 A warm neutral field with a four-step ink ramp on light and a two-step ramp on dark, punctuated by black slabs and interrupted exactly once by a saturated lime.
 
 ### Primary
-- **Volt Lime** (`--volt`): the single accent. Used as a fill: the primary CTA pill, the round arrow on zone cards, the full-bleed pricing block, the coach's years badge, the NDA tag, the skip link, the success banner, the selection highlight, and the focus ring on dark surfaces. It always carries near-black text (`--volt-ink`) on top of it.
+- **Volt Lime** (`--volt`): the single accent. Used as a fill: the primary CTA pill, the round arrow on zone cards, the full-bleed pricing block, the coach's years badge, the skip link, the success banner, the selection highlight, and the focus ring on dark surfaces. It always carries near-black text (`--volt-ink`) on top of it.
 - **Volt Deep** (`--volt-deep`): the darker sibling. Used where lime must sit *on* light as a mark rather than a field — the quote glyph on review cards, the "today" dot on day pills, the alternating rule above even-numbered method steps, and the plans watermark stroke.
 
 ### Neutral — light ground
@@ -312,10 +312,10 @@ A warm neutral field with a four-step ink ramp on light and a two-step ramp on d
 - **Ink 4** (`--ink-4`): icon-only tone. Used for the chevron glyph in drawer links; never for text.
 
 ### Neutral — dark slabs
-- **Slab Black** (`--dark`): the contrast bands — the photographic band, the booking panel, the footer panel, the NDA strip (via `--ink`) and the video card's backing.
+- **Slab Black** (`--dark`): the contrast bands — the photographic band, the booking panel, the footer panel and the video card's backing.
 - **Slab Black Raised** (`--dark-2`): the form plate inside the booking panel, one step up from the slab so the form reads as a card on black.
 - **On Dark** (`--on-dark`): headings and body on black slabs; also the footer's oversized outlined wordmark at 14% opacity.
-- **On Dark 2** (`--on-dark-2`): secondary copy on black — dark prose, field labels, footer addresses, the NDA strip's sentence.
+- **On Dark 2** (`--on-dark-2`): secondary copy on black — dark prose, field labels, footer addresses and the footer's concept note.
 
 ### Lines and material tints
 - **Line** (`--line`), **Line Soft** (`--line-soft`): hairlines on light — day-pill and burger borders, the grid gaps in the facts strip, slot dividers, drawer link rules.
@@ -332,7 +332,7 @@ A warm neutral field with a four-step ink ramp on light and a two-step ramp on d
 ### Named Rules
 **The Fill-Only Volt Rule.** Volt is a background, never a foreground on light. It may carry `--volt-ink` text on top of itself, and it may be text *on a black slab* (`em` inside dark headings, the required-field asterisk, footer link hover, the seal caption). Volt text on paper, panel or white is forbidden — it measures 1.2:1 and does not exist anywhere in the build.
 
-**The One Slab Rule.** Black is punctuation, not ground. A dark surface appears only as a bounded, rounded panel (band, booking, footer) or as a strip (NDA). The page never inverts wholesale, and two black slabs never touch without paper between them.
+**The One Slab Rule.** Black is punctuation, not ground. A dark surface appears only as a bounded, rounded panel (band, booking, footer). The page never inverts wholesale, and two black slabs never touch without paper between them.
 
 **The Audited Ramp Rule.** Every text role in the build was measured, and each clears WCAG AA
 at its actual size and ground: `--ink` on paper ≈ 17:1, `--ink-2` ≈ 10:1, `--ink-3` ≈ 5.1:1 on
@@ -383,7 +383,6 @@ Vertical rhythm comes from two section paddings: `clamp(3.5rem, 7vw, var(--sp-7)
 Section heads are a two-column asymmetric split at `min-width: 900px` (`1.15fr / 0.85fr`, baseline-aligned at the bottom): heading left, one paragraph of prose right. A centred variant collapses to one column with centred text.
 
 **Responsive behaviour**, breakpoint by breakpoint:
-- **`max-width: 680px`** — the NDA strip swaps its full sentence for the short form.
 - **`min-width: 620px`** — the booking form's fields become two columns; the form footer puts its disclaimer and submit on one row.
 - **`min-width: 700px`** — zone photo cards go from 2 to 3 columns.
 - **`min-width: 760px`** — method steps go to 2 columns; coach cards go to 3.
@@ -421,7 +420,7 @@ The system is nearly flat and layers tonally: paper → panel → white card, wi
 
 Radius is the identity. Four steps, each tied to a scale of object: `--r-xl` (`2.5rem`) for full-width plates — the hero panel, the photographic band, the pricing block, the booking panel, the footer; `--r-lg` (`1.75rem`) for cards and every photograph — zone shots, coach portraits, the schedule sheet, review cards, plan cards, the form; `--r-md` (`1.125rem`) for small objects — the video card, the success banner, the footer seal; `--r-sm` (`0.625rem`) for form inputs, the one place a tight corner is correct. Pills (`999px`) carry all buttons, nav links, day chips, tags and badges; circles carry avatars, the round arrow, the burger and the wordmark badge.
 
-Photographs are cropped to fixed ratios so the grids stay honest: `4 / 5` for zone shots, `1` for coach portraits, `16 / 10` for the video card. Borders are hairline and structural, never decorative: `1.5px` on buttons, day pills, plan cards and inputs; `1px` dividers between schedule slots and above card footers; a `2px` top rule on method steps (ink, alternating with volt-deep on even steps); and one dashed `1.5px` volt border on the footer's NDA seal — the only dashed line in the system.
+Photographs are cropped to fixed ratios so the grids stay honest: `4 / 5` for zone shots, `1` for coach portraits, `16 / 10` for the video card. Borders are hairline and structural, never decorative: `1.5px` on buttons, day pills, plan cards and inputs; `1px` dividers between schedule slots and above card footers; a `2px` top rule on method steps (ink, alternating with volt-deep on even steps).
 
 ### Named Rules
 **The Radius-By-Scale Rule.** Corner size scales with the object: plate `2.5rem`, card `1.75rem`, small object `1.125rem`, input `0.625rem`, control `pill`. A card-sized element with a small radius, or an input with a card radius, is off-system.
@@ -442,7 +441,7 @@ Photographs are cropped to fixed ratios so the grids stay honest: `4 / 5` for zo
 ### Chips and tags
 - **Coach chip:** white pill, card shadow, three `34px` avatars overlapping at `-12px` with `2px` white rings, then a `1.0625rem` Unbounded count and a `0.5625rem` mono caption. The hero's proof-of-staff object.
 - **Zone area tag:** absolutely positioned top-left inside a photo, `92%` paper with a `6px` backdrop blur, mono `0.5625rem` in `--ink` — legible over any photograph.
-- **Plan tag / coach years / NDA tag:** small pills, mono `0.5625rem` at weight 700; the plan tag is ink-filled with volt text, the years badge and NDA tag are volt-filled with ink text.
+- **Plan tag / coach years:** small pills, mono `0.5625rem` at weight 700; the plan tag is ink-filled with volt text, the years badge is volt-filled with ink text.
 
 ### Cards / Containers
 - **Corner style:** `--r-lg` for cards, `--r-xl` for plates.
